@@ -4,8 +4,16 @@ $white: #eee;
 $steelgrey: rgb(173, 180, 183);
 $steelblue: #496084;
 
-// Color Remap
+// Color Remap to abstract variables
 $g_black: $black;
 $g_white: $white;
 $g_color1: $steelblue;
 $g_color2: $steelgrey;
+$g_darktxt: $black;
+$g_lighttxt: $white;
+$g_linktxt: $g_color1;
+
+// Typography Globals
+$g_fontsize: 12px;
+$g_lineheight: 20px;
+$g_basefont: "Helvetica", Arial, sans-serif;
