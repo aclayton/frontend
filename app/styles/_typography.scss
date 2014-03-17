@@ -1,0 +1,93 @@
+// - Import site wide variables - //
+@import "_globals.scss";
+
+html { font-size:100.01%; -webkit-font-smoothing: antialiased; }
+
+body {
+  font-size: (100%*$g_fontsize)/16px;
+  color: $g_txtdark;
+  font-family: $g_basefont;
+}
+
+html>body{
+	line-height: ($g_lineheight * 1em)/$g_fontsize;
+}
+
+h1,h2,h3,h4,h5,h6 { font-weight: normal; color: $g_txtdark; margin: 0;}
+
+h1 { @include txt-resize(36px); }
+h2 { @include txt-resize(32px); }
+h3 { @include txt-resize(24px); }
+h4 { @include txt-resize(20px); }
+h5 { @include txt-resize(18px); }
+h6 { @include txt-resize(14px); }
+
+h1 img, h2 img, h3 img,
+h4 img, h5 img, h6 img {
+  margin: 0;
+}
+
+p {
+	margin: 0 0 $g_vunit 0;
+	&:last-of-type{
+		margin: 0;
+	}
+ }
+
+a, a:visited{
+	color: $g_linkcolor; text-decoration: underline;
+	&:focus, &:hover{
+		color: darken($g_linkcolor,10%);
+		text-decoration: underline;
+	}
+}
+
+hr{ 
+	border: 0; 
+	border-bottom: 1px dashed $g_color2;
+	margin: $g_vunit 0;
+	height: 0;
+	margin-bottom: $g_lineheight - 1px;
+}
+
+
+
+
+
+
+blockquote  { margin: $g_vunit $g_hunit; color: $g_color2; font-style: italic; }
+strong,dfn	{ font-weight: bold; }
+em,dfn      { font-style: italic; }
+sup, sub    { line-height: 0; }
+
+abbr,
+acronym     { border-bottom: 1px dotted $g_color2; }
+address     { margin: 0 0 $g_vunit; font-style: italic; }
+del         { color:$g_color2; }
+
+pre         { margin: $g_vunit 0; white-space: pre; }
+pre,code,tt { font: 'andale mono', 'lucida console', monospace; }
+
+
+
+li ul,
+li ol       { margin: 0; }
+ul, ol      { margin: 0 1.5em 1.5em 0; padding-left: 1.5em; }
+
+ul          { list-style-type: disc; }
+ol          { list-style-type: decimal; }
+
+dl          { margin: 0 0 $g_vunit 0; }
+dl dt       { font-weight: bold; }
+dd          { margin-left: $g_hunit;}
+
+
+
+table       { margin-bottom: $g_vunit; width:100%; border-spacing: 0; border-collapse:collapse;}
+th          { font-weight: bold; }
+thead th    { background: $g_color1; }
+th,td,caption { padding: $g_vunit/4 $g_hunit/2 $g_vunit/4 $g_hunit/2; }
+
+tfoot       { font-style: italic; }
+caption     { background: lighten($g_color2,25%); }
+
