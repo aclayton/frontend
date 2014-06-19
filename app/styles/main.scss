@@ -3,11 +3,11 @@
 // endbower
 
 .hero-unit {
-    margin: $g_hunit auto 0 auto;
-    width: fibonacci(15)*1px;
+    margin: 40px auto 0 auto;
+    width: 450px;
     background-color: #eee;
     border-radius: 6px;
-    padding: $g_vunit*3;
+    padding: 40px;
 }
 
 .browsehappy {
